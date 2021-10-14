@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CrosstenSoft Black.otf</string>
+		<string>CrosstenSoft Blackitalic.otf</string>
+		<string>CrosstenSoft Bold.otf</string>
+		<string>CrosstenSoft Bolditalic.otf</string>
+		<string>CrosstenSoft Book.otf</string>
+		<string>CrosstenSoft Bookitalic.otf</string>
+		<string>CrosstenSoft Extrabold.otf</string>
+		<string>CrosstenSoft Extrabolditalic.otf</string>
+		<string>CrosstenSoft Extralight.otf</string>
+		<string>CrosstenSoft Extralightitalic.otf</string>
+		<string>CrosstenSoft Light.otf</string>
+		<string>CrosstenSoft Lightitalic.otf</string>
+		<string>CrosstenSoft Medium.otf</string>
+		<string>CrosstenSoft Mediumitalic.otf</string>
+		<string>CrosstenSoft Semibold.otf</string>
+		<string>CrosstenSoft Semibolditalic.otf</string>
+		<string>CrosstenSoft Thin.otf</string>
+		<string>CrosstenSoft Thinitalic.otf</string>
+		<string>CrosstenSoft Ultra.otf</string>
+		<string>CrosstenSoft Ultraitalic.otf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
