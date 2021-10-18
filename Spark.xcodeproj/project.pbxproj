@@ -28,6 +28,7 @@
 		A1591BAC2718080D0082F238 /* PasswordCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1591BAB2718080D0082F238 /* PasswordCreatorViewController.swift */; };
 		A1591BAE27180E000082F238 /* PasswordConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1591BAD27180E000082F238 /* PasswordConfirmationViewController.swift */; };
 		A1591BB027182AF00082F238 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1591BAF27182AF00082F238 /* GameViewController.swift */; };
+		A1710597271D6F120028B5BB /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A1710596271D6F120028B5BB /* Art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		A1591BAB2718080D0082F238 /* PasswordCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCreatorViewController.swift; sourceTree = "<group>"; };
 		A1591BAD27180E000082F238 /* PasswordConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordConfirmationViewController.swift; sourceTree = "<group>"; };
 		A1591BAF27182AF00082F238 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A1710596271D6F120028B5BB /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +130,12 @@
 				A136905027130CC1006F48C8 /* Fonts */,
 				A136901E2712F818006F48C8 /* AppDelegate.swift */,
 				A13690202712F818006F48C8 /* SceneDelegate.swift */,
+				A1591BAF27182AF00082F238 /* GameViewController.swift */,
 				A13690242712F818006F48C8 /* Main.storyboard */,
 				A13690272712F819006F48C8 /* Assets.xcassets */,
 				A13690292712F819006F48C8 /* LaunchScreen.storyboard */,
 				A136902C2712F819006F48C8 /* Info.plist */,
+				A1710596271D6F120028B5BB /* Art.scnassets */,
 			);
 			path = Spark;
 			sourceTree = "<group>";
@@ -170,7 +174,6 @@
 				A14E7F402717D999005519A2 /* EmailCodeValidationViewController.swift */,
 				A1591BA22717E58F0082F238 /* UsernameViewController.swift */,
 				A1591BAD27180E000082F238 /* PasswordConfirmationViewController.swift */,
-				A1591BAF27182AF00082F238 /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1710597271D6F120028B5BB /* Art.scnassets in Resources */,
 				A136905627130E47006F48C8 /* CrosstenSoft-Font-Family in Resources */,
 				A136902B2712F819006F48C8 /* LaunchScreen.storyboard in Resources */,
 				A13690282712F819006F48C8 /* Assets.xcassets in Resources */,
