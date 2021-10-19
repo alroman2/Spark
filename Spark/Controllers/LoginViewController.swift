@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     
     
     private func setBGGradient(){
-        self.view.gradientBackground(primary: UIColor.systemOrange.cgColor, secondary: UIColor.systemPink.cgColor)
+        self.view.gradientBackground(primary: UIColor(red: 255/255, green: 184/255, blue: 84/255, alpha: 1.0).cgColor, secondary: UIColor(red: 255/255, green: 36/255, blue: 66/255, alpha: 1.0).cgColor)
     }
     
     private func styleButtons(){

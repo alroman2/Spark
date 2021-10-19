@@ -44,7 +44,7 @@ class PasswordConfirmationViewController: UIViewController {
         
         //TODO: Make call to account API and save account
         //if account save is successful perform segue
-        self.performSegue(withIdentifier: "", sender: nil)
+        self.performSegue(withIdentifier: "GameSceneSegue", sender: self)
     }
     
     

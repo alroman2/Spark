@@ -20,14 +20,12 @@ class EmailSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //self.dismissKeyboardOnTap()
-        emailTextField.becomeFirstResponder()
-        emailTextField.setBoxStyleBottomLine()
-        sumbitEmailButton.roundFrame()
-        sumbitEmailButton.gradientBackground(primary: UIColor.systemOrange.cgColor, secondary: UIColor.systemPink.cgColor)
-        //setup core engine for haptics
         hapticManager = HapticsManager()
-        //setupHapticsEngine()
+        emailTextField.setBoxStyleBottomLine()
+        emailTextField.becomeFirstResponder()
+        sumbitEmailButton.roundFrame()
+        sumbitEmailButton.gradientButton(primary: UIColor(red: 255/255, green: 184/255, blue: 84/255, alpha: 1.0).cgColor, secondary: UIColor(red: 255/255, green: 36/255, blue: 66/255, alpha: 1.0).cgColor)
+ 
         
     }
     
@@ -76,17 +74,6 @@ class EmailSignupViewController: UIViewController {
     }
     */
 
-}
 
-extension UIViewController {
-    func dismissKeyboardOnTap(){
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tapRecognizer.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapRecognizer)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
     
 }
