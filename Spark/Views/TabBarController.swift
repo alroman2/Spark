@@ -46,8 +46,8 @@ class TabBarController: UITabBarController {
             self.tabBar.layer.cornerRadius = 30
             self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
             self.tabBar.backgroundColor = UIColor.white
-            self.tabBar.tintColor = .black
-            self.tabBar.unselectedItemTintColor = UIColor.systemBlue
+            self.tabBar.tintColor = UIColor.systemOrange
+            self.tabBar.unselectedItemTintColor = UIColor.systemFill
             
             // Remove the line
             if #available(iOS 13.0, *) {

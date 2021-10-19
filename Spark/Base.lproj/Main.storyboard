@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p4Y-4o-gpc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qt-Sd-KT3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -83,16 +83,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Ljh-4C-JtK">
-                                <rect key="frame" x="40" y="103" width="354" height="117.5"/>
+                                <rect key="frame" x="40" y="103" width="354" height="137"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My email is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uZ-Wc-dbx">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="67.5"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Extrabold" family="Crossten Soft" pointSize="45"/>
-                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="johnsmit@apple.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGK-jw-L4D">
-                                        <rect key="frame" x="0.0" y="63.5" width="319" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="319" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                         <connections>
@@ -100,13 +99,13 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email is Invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa7-Kr-aoO">
-                                        <rect key="frame" x="0.0" y="95.5" width="354" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="354" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Ultra" family="Crossten Soft" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send an email with a verifcation code." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b4-lj-epa">
-                                        <rect key="frame" x="0.0" y="101" width="354" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="354" height="21"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Book" family="Crossten Soft" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -121,32 +120,31 @@
                                     <constraint firstItem="vGK-jw-L4D" firstAttribute="top" secondItem="1uZ-Wc-dbx" secondAttribute="bottom" constant="11" id="Xjp-cs-S3P"/>
                                     <constraint firstItem="1uZ-Wc-dbx" firstAttribute="top" secondItem="Ljh-4C-JtK" secondAttribute="top" id="XmO-bZ-aU3"/>
                                     <constraint firstAttribute="trailing" secondItem="7b4-lj-epa" secondAttribute="trailing" id="dJW-GB-hEN"/>
-                                    <constraint firstAttribute="trailing" secondItem="1uZ-Wc-dbx" secondAttribute="trailing" constant="100" id="ljk-bb-Bv5"/>
+                                    <constraint firstAttribute="trailing" secondItem="1uZ-Wc-dbx" secondAttribute="trailing" id="ljk-bb-Bv5"/>
                                     <constraint firstItem="7b4-lj-epa" firstAttribute="leading" secondItem="Ljh-4C-JtK" secondAttribute="leading" id="mn8-Ps-Xak"/>
                                     <constraint firstAttribute="trailing" secondItem="vGK-jw-L4D" secondAttribute="trailing" constant="35" id="tQQ-yG-tNc"/>
                                     <constraint firstAttribute="bottom" secondItem="7b4-lj-epa" secondAttribute="bottom" id="xuX-vv-wtf"/>
                                     <constraint firstItem="aa7-Kr-aoO" firstAttribute="leading" secondItem="Ljh-4C-JtK" secondAttribute="leading" id="yKu-US-aRP"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfi-gN-8Ld">
-                                <rect key="frame" x="45" y="420.5" width="324" height="31"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gza-pp-NPE">
+                                <rect key="frame" x="35" y="440" width="344" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Continue"/>
                                 <connections>
-                                    <action selector="onSubmitEmail:" destination="DAs-tJ-Gmg" eventType="touchUpInside" id="EcH-YZ-NtN"/>
+                                    <action selector="onSubmitEmail:" destination="DAs-tJ-Gmg" eventType="touchUpInside" id="aDo-df-X58"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W8H-lc-6e6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="W8H-lc-6e6" firstAttribute="trailing" secondItem="zfi-gN-8Ld" secondAttribute="trailing" constant="45" id="3M6-So-9ee"/>
                             <constraint firstItem="W8H-lc-6e6" firstAttribute="trailing" secondItem="Ljh-4C-JtK" secondAttribute="trailing" constant="20" id="5Hw-Si-7E8"/>
                             <constraint firstItem="Ljh-4C-JtK" firstAttribute="leading" secondItem="W8H-lc-6e6" secondAttribute="leading" constant="40" id="6Kh-iF-W1H"/>
-                            <constraint firstItem="zfi-gN-8Ld" firstAttribute="leading" secondItem="W8H-lc-6e6" secondAttribute="leading" constant="45" id="gsc-ZQ-psD"/>
-                            <constraint firstItem="zfi-gN-8Ld" firstAttribute="top" secondItem="Ljh-4C-JtK" secondAttribute="bottom" constant="200" id="ve4-At-900"/>
-                            <constraint firstItem="W8H-lc-6e6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zfi-gN-8Ld" secondAttribute="bottom" constant="190" id="yGN-AN-lcZ"/>
+                            <constraint firstItem="gza-pp-NPE" firstAttribute="leading" secondItem="W8H-lc-6e6" secondAttribute="leading" constant="35" id="FBr-fA-0xe"/>
+                            <constraint firstItem="gza-pp-NPE" firstAttribute="top" secondItem="Ljh-4C-JtK" secondAttribute="bottom" constant="200" id="S4X-e2-vXp"/>
+                            <constraint firstItem="W8H-lc-6e6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gza-pp-NPE" secondAttribute="bottom" constant="150" id="xfi-iu-AzZ"/>
+                            <constraint firstItem="W8H-lc-6e6" firstAttribute="trailing" secondItem="gza-pp-NPE" secondAttribute="trailing" constant="35" id="z0c-rk-GcX"/>
                             <constraint firstItem="Ljh-4C-JtK" firstAttribute="top" secondItem="W8H-lc-6e6" secondAttribute="top" constant="15" id="zJI-fx-4AZ"/>
                         </constraints>
                     </view>
@@ -154,7 +152,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="vGK-jw-L4D" id="RMk-fJ-dzP"/>
                         <outlet property="inavlidEmailLabel" destination="aa7-Kr-aoO" id="Tfd-G0-jH0"/>
-                        <outlet property="sumbitEmailButton" destination="zfi-gN-8Ld" id="iZH-rN-AvL"/>
+                        <outlet property="sumbitEmailButton" destination="gza-pp-NPE" id="xxh-06-SeJ"/>
                         <segue destination="k25-DG-wUp" kind="show" identifier="verifyEmailSegue" id="egh-ta-5ru"/>
                     </connections>
                 </viewController>
@@ -171,25 +169,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fad-D5-RFz">
-                                <rect key="frame" x="35" y="422" width="344" height="31"/>
+                                <rect key="frame" x="35" y="446" width="344" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Continue"/>
                                 <connections>
                                     <action selector="onCodeSubmission:" destination="k25-DG-wUp" eventType="touchUpInside" id="FfY-y8-NP8"/>
-                                    <action selector="onSubmitEmail:" destination="DAs-tJ-Gmg" eventType="touchUpInside" id="vmj-rS-WhL"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="CQB-k0-GvH">
-                                <rect key="frame" x="40" y="88" width="354" height="134"/>
+                                <rect key="frame" x="40" y="88" width="354" height="158"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My code is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-jp-oH9">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="254" height="67.5"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Extrabold" family="Crossten Soft" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLS-LU-er3">
-                                        <rect key="frame" x="0.0" y="63.5" width="319" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="319" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue" textContentType="one-time-code"/>
                                         <connections>
@@ -198,13 +195,13 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code is Invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLy-sT-Ffl">
-                                        <rect key="frame" x="0.0" y="95.5" width="354" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="354" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Ultra" family="Crossten Soft" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A verifcation code was sent to your email. Didn't get code? Receive new code." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PQ-dq-4K0">
-                                        <rect key="frame" x="0.0" y="101" width="354" height="33"/>
+                                        <rect key="frame" x="0.0" y="116" width="354" height="42"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Book" family="Crossten Soft" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -260,16 +257,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-CA-GGK">
-                                <rect key="frame" x="35" y="93" width="374" height="117.5"/>
+                                <rect key="frame" x="35" y="93" width="374" height="137"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My username is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7d-Bm-fhc">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My name is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7d-Bm-fhc">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="67.5"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Extrabold" family="Crossten Soft" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="johnappleseed2 " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xrt-oa-MBe">
-                                        <rect key="frame" x="0.0" y="63.5" width="339" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="339" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="continue" textContentType="username"/>
                                         <connections>
@@ -277,13 +274,13 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username is taken" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh1-WW-gzS">
-                                        <rect key="frame" x="0.0" y="95.5" width="374" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="374" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Ultra" family="Crossten Soft" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a username for your account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfL-Rz-CR3">
-                                        <rect key="frame" x="0.0" y="101" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Book" family="Crossten Soft" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -306,7 +303,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-yZ-JMT">
-                                <rect key="frame" x="35" y="410.5" width="344" height="31"/>
+                                <rect key="frame" x="35" y="430" width="344" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Continue"/>
                                 <connections>
@@ -347,16 +344,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="idE-LU-Gw5">
-                                <rect key="frame" x="40" y="93" width="379" height="148.5"/>
+                                <rect key="frame" x="40" y="93" width="379" height="177.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="My password is" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R89-Xb-zHe">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="67.5"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Extrabold" family="Crossten Soft" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="New Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nqa-zF-0w1">
-                                        <rect key="frame" x="0.0" y="63.5" width="344" height="25"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="344" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="new-password"/>
                                         <connections>
@@ -364,13 +361,13 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gu-Tz-blD">
-                                        <rect key="frame" x="0.0" y="94" width="379" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="109" width="379" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Ultra" family="Crossten Soft" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New passwords must be at least 6 characters . Must contain one uppercase and lower case letter. Must contain at least 1 number." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsN-t7-xdd">
-                                        <rect key="frame" x="0.0" y="99.5" width="369.5" height="49"/>
+                                        <rect key="frame" x="0.0" y="114.5" width="356" height="63"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Book" family="Crossten Soft" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -442,22 +439,22 @@
         <!--Password Confirmation View Controller-->
         <scene sceneID="uoG-jx-CAB">
             <objects>
-                <viewController id="EkS-ML-3FO" customClass="PasswordConfirmationViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="EkS-ML-3FO" customClass="PasswordConfirmationViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWP-iA-uBq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Nj3-sS-NdJ">
-                                <rect key="frame" x="40" y="93" width="379" height="168.5"/>
+                                <rect key="frame" x="40" y="93" width="379" height="224"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Retype Password to confirm " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1s-hC-yTg">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Extrabold" family="Crossten Soft" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Retype Password " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5V-NB-5za">
-                                        <rect key="frame" x="0.0" y="116" width="344" height="25"/>
+                                        <rect key="frame" x="0.0" y="146" width="344" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="new-password"/>
                                         <connections>
@@ -465,13 +462,13 @@
                                         </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOq-Ej-iUV">
-                                        <rect key="frame" x="0.0" y="146.5" width="379" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="379" height="0.0"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Ultra" family="Crossten Soft" pointSize="18"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm your password or go back to pick a new password." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3U-Dl-GFf">
-                                        <rect key="frame" x="0.0" y="152" width="374" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="182" width="303" height="42"/>
                                         <fontDescription key="fontDescription" name="CrosstenSoft-Book" family="Crossten Soft" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -515,6 +512,7 @@
                         <outlet property="continueButton" destination="8W7-Eu-hCL" id="d6l-D6-tc8"/>
                         <outlet property="invalidPasswordLabel" destination="rOq-Ej-iUV" id="n38-Q8-pFW"/>
                         <outlet property="passwordTextField" destination="h5V-NB-5za" id="de2-8F-u4j"/>
+                        <segue destination="p4Y-4o-gpc" kind="presentation" identifier="GameSceneSegue" id="Fng-F8-hbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5M-Ge-NDj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -530,7 +528,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcQ-1W-M8v">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </sceneKitView>
@@ -545,7 +543,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJj-BK-yrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8466.6666666666679" y="121.20535714285714"/>
+            <point key="canvasLocation" x="9376.8115942028999" y="121.20535714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VkQ-4b-TYm">
+            <objects>
+                <viewController id="of3-rC-Gft" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cN8-M2-ob9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wod-R4-yHo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="93c-ZZ-HLf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gi3-PC-qes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7288" y="190"/>
         </scene>
         <!--Sparks-->
         <scene sceneID="21U-61-RyO">
@@ -564,12 +578,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nl3-YV-2YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7555.0724637681169" y="120.53571428571428"/>
+            <point key="canvasLocation" x="8465.217391304348" y="120.53571428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GXz-8R-i6P">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p4Y-4o-gpc" customClass="TabBarController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="p4Y-4o-gpc" customClass="TabBarController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QDA-vy-bKk">
                         <autoresizingMask key="autoresizingMask"/>
@@ -577,15 +591,36 @@
                     </tabBar>
                     <connections>
                         <segue destination="enw-v1-CWN" kind="relationship" relationship="viewControllers" id="rdK-gD-kKX"/>
+                        <segue destination="yLI-FZ-enu" kind="relationship" relationship="viewControllers" id="CVd-js-xOp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZf-KI-s7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6644.9275362318849" y="120.53571428571428"/>
+            <point key="canvasLocation" x="7513" y="-1105"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Q6m-3F-t9k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yLI-FZ-enu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="1f8-NC-CGG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oO1-38-ESB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="of3-rC-Gft" kind="relationship" relationship="rootViewController" id="Kw5-el-GFT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nd-EN-t7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6590" y="-555"/>
         </scene>
     </scenes>
     <resources>
         <image name="flame" catalog="system" width="108" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
