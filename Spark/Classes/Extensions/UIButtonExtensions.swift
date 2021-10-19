@@ -16,17 +16,24 @@ extension UIButton {
     
     func gradientButton(primary: CGColor, secondary: CGColor) {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.bounds
+        gradientLayer.cornerRadius = self.frame.height/2
+        gradientLayer.frame = self.layer.bounds
+        
         gradientLayer.colors = [
-            primary,
-            secondary
+            UIColor(red: 255/255, green: 184/255, blue: 84/255, alpha: 1.0).cgColor, UIColor(red: 255/255, green: 36/255, blue: 66/255, alpha: 1.0).cgColor
         ]
-        gradientLayer.cornerRadius = self.layer.cornerRadius
         self.setTitleColor(UIColor.white, for: UIControl.State.normal)
         self.tintColor = UIColor.white
         self.backgroundColor = UIColor.clear
         self.layer.borderWidth = 0.0
-        self.layer.addSublayer(gradientLayer)
+        gradientLayer.shadowColor = UIColor.darkGray.cgColor
+        gradientLayer.shadowOffset = CGSize(width: -2.0, height: 5.0)
+        gradientLayer.shadowRadius = 3.0
+        gradientLayer.shadowOpacity = 1.0
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        
+        self.titleLabel?.textAlignment = .center
+        self.contentVerticalAlignment = .center
     }
     
     func whiteButton(){
