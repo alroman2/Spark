@@ -16,7 +16,6 @@
 		A13690402712F819006F48C8 /* SparkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136903F2712F819006F48C8 /* SparkUITests.swift */; };
 		A13690422712F819006F48C8 /* SparkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13690412712F819006F48C8 /* SparkUITestsLaunchTests.swift */; };
 		A136904F271303A8006F48C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A136904E271303A8006F48C8 /* LoginViewController.swift */; };
-		A136905627130E47006F48C8 /* CrosstenSoft-Font-Family in Resources */ = {isa = PBXBuildFile; fileRef = A136905527130DFB006F48C8 /* CrosstenSoft-Font-Family */; };
 		A14E7F392713B492005519A2 /* SparkStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E7F382713B492005519A2 /* SparkStyle.swift */; };
 		A14E7F3B2713D7EB005519A2 /* EmailSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E7F3A2713D7EB005519A2 /* EmailSignupViewController.swift */; };
 		A14E7F3F2717C7BD005519A2 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E7F3E2717C7BD005519A2 /* HapticsManager.swift */; };
@@ -30,6 +29,26 @@
 		A1591BB027182AF00082F238 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1591BAF27182AF00082F238 /* GameViewController.swift */; };
 		A1710597271D6F120028B5BB /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A1710596271D6F120028B5BB /* Art.scnassets */; };
 		A17105DC271E9A820028B5BB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17105DB271E9A820028B5BB /* TabBarController.swift */; };
+		A17105F1271F668D0028B5BB /* CrosstenSoft Ultraitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105DD271F668B0028B5BB /* CrosstenSoft Ultraitalic.otf */; };
+		A17105F2271F668D0028B5BB /* CrosstenSoft Extrabolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105DE271F668B0028B5BB /* CrosstenSoft Extrabolditalic.otf */; };
+		A17105F3271F668D0028B5BB /* CrosstenSoft Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105DF271F668B0028B5BB /* CrosstenSoft Extralight.otf */; };
+		A17105F4271F668D0028B5BB /* CrosstenSoft Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E0271F668B0028B5BB /* CrosstenSoft Black.otf */; };
+		A17105F5271F668D0028B5BB /* CrosstenSoft Bolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E1271F668B0028B5BB /* CrosstenSoft Bolditalic.otf */; };
+		A17105F6271F668D0028B5BB /* CrosstenSoft Thinitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E2271F668C0028B5BB /* CrosstenSoft Thinitalic.otf */; };
+		A17105F7271F668D0028B5BB /* CrosstenSoft Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E3271F668C0028B5BB /* CrosstenSoft Light.otf */; };
+		A17105F8271F668D0028B5BB /* CrosstenSoft Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E4271F668C0028B5BB /* CrosstenSoft Bold.otf */; };
+		A17105F9271F668D0028B5BB /* CrosstenSoft Extralightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E5271F668C0028B5BB /* CrosstenSoft Extralightitalic.otf */; };
+		A17105FA271F668D0028B5BB /* CrosstenSoft Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E6271F668C0028B5BB /* CrosstenSoft Medium.otf */; };
+		A17105FB271F668D0028B5BB /* CrosstenSoft Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E7271F668C0028B5BB /* CrosstenSoft Semibold.otf */; };
+		A17105FC271F668D0028B5BB /* CrosstenSoft Semibolditalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E8271F668C0028B5BB /* CrosstenSoft Semibolditalic.otf */; };
+		A17105FD271F668D0028B5BB /* CrosstenSoft Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105E9271F668C0028B5BB /* CrosstenSoft Ultra.otf */; };
+		A17105FE271F668D0028B5BB /* CrosstenSoft Blackitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EA271F668C0028B5BB /* CrosstenSoft Blackitalic.otf */; };
+		A17105FF271F668D0028B5BB /* CrosstenSoft Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EB271F668C0028B5BB /* CrosstenSoft Book.otf */; };
+		A1710600271F668D0028B5BB /* CrosstenSoft Lightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EC271F668C0028B5BB /* CrosstenSoft Lightitalic.otf */; };
+		A1710601271F668D0028B5BB /* CrosstenSoft Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105ED271F668C0028B5BB /* CrosstenSoft Extrabold.otf */; };
+		A1710602271F668D0028B5BB /* CrosstenSoft Bookitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EE271F668C0028B5BB /* CrosstenSoft Bookitalic.otf */; };
+		A1710603271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EF271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf */; };
+		A1710604271F668D0028B5BB /* CrosstenSoft Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105F0271F668D0028B5BB /* CrosstenSoft Thin.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +82,6 @@
 		A136903F2712F819006F48C8 /* SparkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITests.swift; sourceTree = "<group>"; };
 		A13690412712F819006F48C8 /* SparkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A136904E271303A8006F48C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A136905527130DFB006F48C8 /* CrosstenSoft-Font-Family */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "CrosstenSoft-Font-Family"; path = "../../../Spark Assets/CrosstenSoft-Font-Family"; sourceTree = "<group>"; };
 		A14E7F382713B492005519A2 /* SparkStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkStyle.swift; sourceTree = "<group>"; };
 		A14E7F3A2713D7EB005519A2 /* EmailSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignupViewController.swift; sourceTree = "<group>"; };
 		A14E7F3E2717C7BD005519A2 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
@@ -77,6 +95,26 @@
 		A1591BAF27182AF00082F238 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A1710596271D6F120028B5BB /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		A17105DB271E9A820028B5BB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A17105DD271F668B0028B5BB /* CrosstenSoft Ultraitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Ultraitalic.otf"; sourceTree = "<group>"; };
+		A17105DE271F668B0028B5BB /* CrosstenSoft Extrabolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Extrabolditalic.otf"; sourceTree = "<group>"; };
+		A17105DF271F668B0028B5BB /* CrosstenSoft Extralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Extralight.otf"; sourceTree = "<group>"; };
+		A17105E0271F668B0028B5BB /* CrosstenSoft Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Black.otf"; sourceTree = "<group>"; };
+		A17105E1271F668B0028B5BB /* CrosstenSoft Bolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Bolditalic.otf"; sourceTree = "<group>"; };
+		A17105E2271F668C0028B5BB /* CrosstenSoft Thinitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Thinitalic.otf"; sourceTree = "<group>"; };
+		A17105E3271F668C0028B5BB /* CrosstenSoft Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Light.otf"; sourceTree = "<group>"; };
+		A17105E4271F668C0028B5BB /* CrosstenSoft Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Bold.otf"; sourceTree = "<group>"; };
+		A17105E5271F668C0028B5BB /* CrosstenSoft Extralightitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Extralightitalic.otf"; sourceTree = "<group>"; };
+		A17105E6271F668C0028B5BB /* CrosstenSoft Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Medium.otf"; sourceTree = "<group>"; };
+		A17105E7271F668C0028B5BB /* CrosstenSoft Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Semibold.otf"; sourceTree = "<group>"; };
+		A17105E8271F668C0028B5BB /* CrosstenSoft Semibolditalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Semibolditalic.otf"; sourceTree = "<group>"; };
+		A17105E9271F668C0028B5BB /* CrosstenSoft Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Ultra.otf"; sourceTree = "<group>"; };
+		A17105EA271F668C0028B5BB /* CrosstenSoft Blackitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Blackitalic.otf"; sourceTree = "<group>"; };
+		A17105EB271F668C0028B5BB /* CrosstenSoft Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Book.otf"; sourceTree = "<group>"; };
+		A17105EC271F668C0028B5BB /* CrosstenSoft Lightitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Lightitalic.otf"; sourceTree = "<group>"; };
+		A17105ED271F668C0028B5BB /* CrosstenSoft Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Extrabold.otf"; sourceTree = "<group>"; };
+		A17105EE271F668C0028B5BB /* CrosstenSoft Bookitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Bookitalic.otf"; sourceTree = "<group>"; };
+		A17105EF271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Mediumitalic.otf"; sourceTree = "<group>"; };
+		A17105F0271F668D0028B5BB /* CrosstenSoft Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Thin.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +201,26 @@
 		A136905027130CC1006F48C8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				A136905527130DFB006F48C8 /* CrosstenSoft-Font-Family */,
+				A17105E0271F668B0028B5BB /* CrosstenSoft Black.otf */,
+				A17105EA271F668C0028B5BB /* CrosstenSoft Blackitalic.otf */,
+				A17105E4271F668C0028B5BB /* CrosstenSoft Bold.otf */,
+				A17105E1271F668B0028B5BB /* CrosstenSoft Bolditalic.otf */,
+				A17105EB271F668C0028B5BB /* CrosstenSoft Book.otf */,
+				A17105EE271F668C0028B5BB /* CrosstenSoft Bookitalic.otf */,
+				A17105ED271F668C0028B5BB /* CrosstenSoft Extrabold.otf */,
+				A17105DE271F668B0028B5BB /* CrosstenSoft Extrabolditalic.otf */,
+				A17105DF271F668B0028B5BB /* CrosstenSoft Extralight.otf */,
+				A17105E5271F668C0028B5BB /* CrosstenSoft Extralightitalic.otf */,
+				A17105E3271F668C0028B5BB /* CrosstenSoft Light.otf */,
+				A17105EC271F668C0028B5BB /* CrosstenSoft Lightitalic.otf */,
+				A17105E6271F668C0028B5BB /* CrosstenSoft Medium.otf */,
+				A17105EF271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf */,
+				A17105E7271F668C0028B5BB /* CrosstenSoft Semibold.otf */,
+				A17105E8271F668C0028B5BB /* CrosstenSoft Semibolditalic.otf */,
+				A17105F0271F668D0028B5BB /* CrosstenSoft Thin.otf */,
+				A17105E2271F668C0028B5BB /* CrosstenSoft Thinitalic.otf */,
+				A17105E9271F668C0028B5BB /* CrosstenSoft Ultra.otf */,
+				A17105DD271F668B0028B5BB /* CrosstenSoft Ultraitalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -313,10 +370,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17105FF271F668D0028B5BB /* CrosstenSoft Book.otf in Resources */,
+				A17105F2271F668D0028B5BB /* CrosstenSoft Extrabolditalic.otf in Resources */,
+				A1710604271F668D0028B5BB /* CrosstenSoft Thin.otf in Resources */,
+				A1710602271F668D0028B5BB /* CrosstenSoft Bookitalic.otf in Resources */,
+				A17105F1271F668D0028B5BB /* CrosstenSoft Ultraitalic.otf in Resources */,
+				A17105FD271F668D0028B5BB /* CrosstenSoft Ultra.otf in Resources */,
+				A17105F8271F668D0028B5BB /* CrosstenSoft Bold.otf in Resources */,
+				A17105F6271F668D0028B5BB /* CrosstenSoft Thinitalic.otf in Resources */,
+				A17105F4271F668D0028B5BB /* CrosstenSoft Black.otf in Resources */,
+				A1710603271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf in Resources */,
+				A1710601271F668D0028B5BB /* CrosstenSoft Extrabold.otf in Resources */,
+				A17105F9271F668D0028B5BB /* CrosstenSoft Extralightitalic.otf in Resources */,
 				A1710597271D6F120028B5BB /* Art.scnassets in Resources */,
-				A136905627130E47006F48C8 /* CrosstenSoft-Font-Family in Resources */,
+				A17105F3271F668D0028B5BB /* CrosstenSoft Extralight.otf in Resources */,
+				A17105F7271F668D0028B5BB /* CrosstenSoft Light.otf in Resources */,
+				A17105FA271F668D0028B5BB /* CrosstenSoft Medium.otf in Resources */,
+				A1710600271F668D0028B5BB /* CrosstenSoft Lightitalic.otf in Resources */,
+				A17105FE271F668D0028B5BB /* CrosstenSoft Blackitalic.otf in Resources */,
 				A136902B2712F819006F48C8 /* LaunchScreen.storyboard in Resources */,
+				A17105FB271F668D0028B5BB /* CrosstenSoft Semibold.otf in Resources */,
 				A13690282712F819006F48C8 /* Assets.xcassets in Resources */,
+				A17105F5271F668D0028B5BB /* CrosstenSoft Bolditalic.otf in Resources */,
+				A17105FC271F668D0028B5BB /* CrosstenSoft Semibolditalic.otf in Resources */,
 				A13690262712F818006F48C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
