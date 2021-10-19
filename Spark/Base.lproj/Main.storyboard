@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z3i-Kn-BvE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p4Y-4o-gpc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -521,7 +521,7 @@
             </objects>
             <point key="canvasLocation" x="4987" y="144"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Scene-->
         <scene sceneID="h82-7G-l8w">
             <objects>
                 <viewController id="Z3i-Kn-BvE" customClass="GameViewController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
@@ -530,23 +530,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcQ-1W-M8v">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="535"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </sceneKitView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ni6-HP-kW0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Scene" id="g4x-57-cV6"/>
                     <connections>
                         <outlet property="sceneView" destination="LcQ-1W-M8v" id="0tO-3b-V8K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJj-BK-yrx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6089.8550724637689" y="118.52678571428571"/>
+            <point key="canvasLocation" x="8466.6666666666679" y="121.20535714285714"/>
+        </scene>
+        <!--Sparks-->
+        <scene sceneID="21U-61-RyO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="enw-v1-CWN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sparks" image="flame" catalog="system" id="urr-2D-DMA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ju-Iz-q2c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z3i-Kn-BvE" kind="relationship" relationship="rootViewController" id="9Jn-9V-2PU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nl3-YV-2YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7555.0724637681169" y="120.53571428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GXz-8R-i6P">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="p4Y-4o-gpc" customClass="TabBarController" customModule="Spark" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QDA-vy-bKk">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="enw-v1-CWN" kind="relationship" relationship="viewControllers" id="rdK-gD-kKX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZf-KI-s7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6644.9275362318849" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="flame" catalog="system" width="108" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
