@@ -34,7 +34,7 @@ class GameViewController: UIViewController {
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }
-
+    
     func setupScene(){
         //setup camera
         
@@ -48,7 +48,7 @@ class GameViewController: UIViewController {
         //setup light environment
         setupEnvironmentLighting()
         
-        worldNode = (sceneView.scene?.rootNode.childNode(withName: "a", recursively: true))!
+        worldNode = (sceneView.scene?.rootNode.childNode(withName: "Mountain Lake copy reference", recursively: true))!
         
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGesture(gestureRecognize:)))
         sceneView.addGestureRecognizer(panRecognizer)
@@ -70,14 +70,14 @@ class GameViewController: UIViewController {
     }
     
     func setupCamera(){
-//        frontCamera = SCNCamera()
-//        frontCamera.fieldOfView = 40
-//
-//        let frontCameraNode = SCNNode()
-//        frontCameraNode.camera = frontCamera
-//        frontCameraNode.position = SCNVector3Make(-14, 10, 0)
-//        frontCameraNode.orientation = SCNQuaternion(-0.26, -0.32, 0, 0.91)
-//        scene.rootNode.addChildNode(frontCameraNode)
+        //        frontCamera = SCNCamera()
+        //        frontCamera.fieldOfView = 40
+        //
+        //        let frontCameraNode = SCNNode()
+        //        frontCameraNode.camera = frontCamera
+        //        frontCameraNode.position = SCNVector3Make(-14, 10, 0)
+        //        frontCameraNode.orientation = SCNQuaternion(-0.26, -0.32, 0, 0.91)
+        //        scene.rootNode.addChildNode(frontCameraNode)
         
     }
     
@@ -85,13 +85,13 @@ class GameViewController: UIViewController {
         
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

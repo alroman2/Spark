@@ -26,10 +26,6 @@ extension UIButton {
         self.tintColor = UIColor.white
         self.backgroundColor = UIColor.clear
         self.layer.borderWidth = 0.0
-        gradientLayer.shadowColor = UIColor.darkGray.cgColor
-        gradientLayer.shadowOffset = CGSize(width: -2.0, height: 5.0)
-        gradientLayer.shadowRadius = 3.0
-        gradientLayer.shadowOpacity = 1.0
         self.layer.insertSublayer(gradientLayer, at: 0)
         
         self.titleLabel?.textAlignment = .center

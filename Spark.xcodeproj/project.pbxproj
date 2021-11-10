@@ -49,6 +49,11 @@
 		A1710602271F668D0028B5BB /* CrosstenSoft Bookitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EE271F668C0028B5BB /* CrosstenSoft Bookitalic.otf */; };
 		A1710603271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105EF271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf */; };
 		A1710604271F668D0028B5BB /* CrosstenSoft Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = A17105F0271F668D0028B5BB /* CrosstenSoft Thin.otf */; };
+		A1710606271F86AF0028B5BB /* SingleSignOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710605271F86AF0028B5BB /* SingleSignOnViewController.swift */; };
+		A1710608271FB8B00028B5BB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */; };
+		A171060A272126C70028B5BB /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710609272126C60028B5BB /* Terrain.swift */; };
+		A171060C27213E700028B5BB /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171060B27213E700028B5BB /* TestingViewController.swift */; };
+		A1E7E6D1272CAD0700802398 /* WorldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7E6D0272CAD0700802398 /* WorldState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,11 @@
 		A17105EE271F668C0028B5BB /* CrosstenSoft Bookitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Bookitalic.otf"; sourceTree = "<group>"; };
 		A17105EF271F668D0028B5BB /* CrosstenSoft Mediumitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Mediumitalic.otf"; sourceTree = "<group>"; };
 		A17105F0271F668D0028B5BB /* CrosstenSoft Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrosstenSoft Thin.otf"; sourceTree = "<group>"; };
+		A1710605271F86AF0028B5BB /* SingleSignOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSignOnViewController.swift; sourceTree = "<group>"; };
+		A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A1710609272126C60028B5BB /* Terrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
+		A171060B27213E700028B5BB /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		A1E7E6D0272CAD0700802398 /* WorldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +175,6 @@
 		A136901D2712F818006F48C8 /* Spark */ = {
 			isa = PBXGroup;
 			children = (
-				A17105D8271E8DFF0028B5BB /* Views */,
 				A136905227130CD4006F48C8 /* Classes */,
 				A136905127130CCB006F48C8 /* Controllers */,
 				A136905027130CC1006F48C8 /* Fonts */,
@@ -234,6 +243,8 @@
 				A14E7F402717D999005519A2 /* EmailCodeValidationViewController.swift */,
 				A1591BA22717E58F0082F238 /* UsernameViewController.swift */,
 				A1591BAD27180E000082F238 /* PasswordConfirmationViewController.swift */,
+				A1710605271F86AF0028B5BB /* SingleSignOnViewController.swift */,
+				A171060B27213E700028B5BB /* TestingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,9 +252,12 @@
 		A136905227130CD4006F48C8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A17105D8271E8DFF0028B5BB /* Views */,
 				A1591BA42717F7670082F238 /* Extensions */,
 				A14E7F382713B492005519A2 /* SparkStyle.swift */,
 				A14E7F3E2717C7BD005519A2 /* HapticsManager.swift */,
+				A1710609272126C60028B5BB /* Terrain.swift */,
+				A1E7E6D0272CAD0700802398 /* WorldState.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -254,6 +268,7 @@
 				A1591BA52717F7930082F238 /* UITextFieldExtensions.swift */,
 				A1591BA72717F90D0082F238 /* UIButtonExtensions.swift */,
 				A1591BA92717FA200082F238 /* UIViewExtensions.swift */,
+				A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -419,16 +434,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1591BB027182AF00082F238 /* GameViewController.swift in Sources */,
+				A1710608271FB8B00028B5BB /* UIViewControllerExtensions.swift in Sources */,
+				A1E7E6D1272CAD0700802398 /* WorldState.swift in Sources */,
 				A1591BAC2718080D0082F238 /* PasswordCreatorViewController.swift in Sources */,
 				A1591BAA2717FA200082F238 /* UIViewExtensions.swift in Sources */,
 				A17105DC271E9A820028B5BB /* TabBarController.swift in Sources */,
+				A1710606271F86AF0028B5BB /* SingleSignOnViewController.swift in Sources */,
 				A14E7F3F2717C7BD005519A2 /* HapticsManager.swift in Sources */,
 				A1591BAE27180E000082F238 /* PasswordConfirmationViewController.swift in Sources */,
 				A14E7F412717D999005519A2 /* EmailCodeValidationViewController.swift in Sources */,
+				A171060C27213E700028B5BB /* TestingViewController.swift in Sources */,
 				A136904F271303A8006F48C8 /* LoginViewController.swift in Sources */,
 				A14E7F392713B492005519A2 /* SparkStyle.swift in Sources */,
 				A136901F2712F818006F48C8 /* AppDelegate.swift in Sources */,
 				A1591BA82717F90D0082F238 /* UIButtonExtensions.swift in Sources */,
+				A171060A272126C70028B5BB /* Terrain.swift in Sources */,
 				A13690212712F818006F48C8 /* SceneDelegate.swift in Sources */,
 				A1591BA32717E58F0082F238 /* UsernameViewController.swift in Sources */,
 				A1591BA62717F7930082F238 /* UITextFieldExtensions.swift in Sources */,
