@@ -26,19 +26,7 @@ class Tree {
     
     
     /// initializes the corresponding SCNNode for the tree, throws invalid model if the file does not exist or cannot be found
-    private func loadModel(fileName: String, fileType: String, dir: String) throws {
-        
-        if let filePath = Bundle.main.path(forResource: fileName, ofType: fileType, inDirectory: dir) {
-            //attatch model to node
-            let url = URL(fileURLWithPath: filePath)
-            
-            refNode = SCNReferenceNode(url: url)
-            refNode?.load()
-        } else {
-            //throw error
-            throw WorldDataError.invalidModel
-        }
-    }
+    
     
     
     
