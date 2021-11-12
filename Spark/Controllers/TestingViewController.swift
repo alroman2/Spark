@@ -39,7 +39,7 @@ class TestingViewController: UIViewController {
         //sceneView.allowsCameraControl = true
         scene = SCNScene()
         //let tarrainReference = SCNReferenceNode(coder: terrain.terrainScene?.rootNode as! SCNNode)
-        scene.rootNode.addChildNode((terrain.terrainScene?.rootNode.childNode(withName: "Terrain Parent Node", recursively: true))!)
+        scene.rootNode.addChildNode(terrain.parentNode)
         sceneView.scene = scene
         sceneView.showsStatistics = true
         //sceneView.debugOptions = [.showWireframe,.showBoundingBoxes]

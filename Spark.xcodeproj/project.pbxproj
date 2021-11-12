@@ -265,7 +265,6 @@
 				A1591BA42717F7670082F238 /* Extensions */,
 				A14E7F382713B492005519A2 /* SparkStyle.swift */,
 				A14E7F3E2717C7BD005519A2 /* HapticsManager.swift */,
-				A1710609272126C60028B5BB /* Terrain.swift */,
 				A1E7E6D0272CAD0700802398 /* WorldState.swift */,
 			);
 			path = Classes;
@@ -297,6 +296,7 @@
 				A19BE12E273E311600CE11E3 /* Tree.swift */,
 				A19BE130273E3FB400CE11E3 /* WorldDataError.swift */,
 				A19BE132273E44E400CE11E3 /* WorldObject.swift */,
+				A1710609272126C60028B5BB /* Terrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
