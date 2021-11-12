@@ -9,9 +9,7 @@ import Foundation
 import SceneKit
 
 
-enum TerrainError: Error {
-    case invalidModel
-}
+
 
 ///The terrain class models terrain data and functions
 ///Accessing or Modify Terrain Properties Should be done before attatching a reference to another scene
@@ -111,7 +109,7 @@ class Terrain {
             })
             
         } else {
-            throw TerrainError.invalidModel
+            throw WorldDataError.invalidModel
         }
         
         
