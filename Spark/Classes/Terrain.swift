@@ -13,7 +13,7 @@ import SceneKit
 
 ///The terrain class models terrain data and functions
 ///Accessing or Modify Terrain Properties Should be done before attatching a reference to another scene
-class Terrain {
+class Terrain: WorldObject {
     //TODO: Change terrain geometry to accecpt reference to an external file (Collada)
     
     private var terrainWidth: Int!
@@ -96,15 +96,13 @@ class Terrain {
             let referenceNode = SCNReferenceNode(url: referenceURL)
             referenceNode!.load()
             
-            
-            //print(referenceNode?.childNodes[0].geometry?.vertices())
+        
             terrainScene?.rootNode.enumerateChildNodes({ node, stop in
                 if let name = node.name, name.contains(nodeName){
                     modelCopy = referenceNode!.clone()
                     
                     node.addChildNode(modelCopy!)
-                    //print(node.childNodes[0].childNodes[0].geometry?.elementCount)
-                    //node.geometry = modelCopy?.geometry
+                 y
                 }
             })
             
@@ -160,20 +158,7 @@ class Terrain {
     }
     
     
-    /// Calculates a translation vector by calculating the minimum distance between two coordinate points
-    /// - Parameters:
-    ///   - startingVector: The initial positon
-    ///   - EndVector: The final or target position
-    /// - Returns: The distance between the two
-    private func coordinateTranslation(startingVector: SCNVector3, EndVector: SCNVector3) -> SCNVector3{
-        var translationVector: SCNVector3 = SCNVector3()
-        
-        translationVector.x = EndVector.x - startingVector.x
-        translationVector.y = EndVector.y - startingVector.y
-        translationVector.z = EndVector.z - startingVector.z
-        
-        return translationVector
-    }
+   
     
     
     // MARK: Debugging Options
