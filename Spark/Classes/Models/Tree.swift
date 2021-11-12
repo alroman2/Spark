@@ -10,9 +10,9 @@ import SceneKit
 
 
 
-class Tree {
-    private var geometry: SCNGeometry!
-    private var refNode: SCNReferenceNode!
+class Tree: WorldObject {
+   
+   
     
     
     /// Initialize a Tree object and it's respective model
@@ -21,12 +21,13 @@ class Tree {
     ///   - fileType: inherits scenekit accepted filetypes
     ///   - dir: directory path from project root
     init(fileName:String, fileType:String, dir:String){
+        super.init()
+        
         try? loadModel(fileName: fileName, fileType: fileType, dir: dir)
     }
     
     
-    /// initializes the corresponding SCNNode for the tree, throws invalid model if the file does not exist or cannot be found
-    
+   
     
     
     
