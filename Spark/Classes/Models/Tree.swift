@@ -22,14 +22,9 @@ class Tree: WorldObject {
     ///   - dir: directory path from project root
     init(fileName:String, fileType:String, dir:String){
         super.init()
-        
+
         try? loadModel(fileName: fileName, fileType: fileType, dir: dir)
     }
-    
-    
-   
-    
-    
     
     
 }

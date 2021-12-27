@@ -16,11 +16,13 @@ import SceneKit
 class Terrain: WorldObject {
     //TODO: Change terrain geometry to accecpt reference to an external file (Collada)
     
-    private var width: Int!
-    private var length: Int!
-    private var height: Int!
+    var width: Int!
+    var length: Int!
+    var height: Int!
     
+    var grid: [[SCNNode]]!
     var parentNode:SCNNode!
+     
     
     
     
@@ -35,10 +37,12 @@ class Terrain: WorldObject {
         self.length = length
         self.height = height
         
+        grid = [[SCNNode]](repeating: [SCNNode](repeating: SCNNode(), count: width), count: length)
+        
         parentNode = SCNNode()
         parentNode.name = "Terrain Parent Node"
         
-        createNodeGrid(zSize: width, xSize: length)
+      
         
         //loads model as ref node into Terrain
         try? loadModel(fileName: "Terrain_Suraface_Flat", fileType: "scn", dir: "/Art.scnassets/Terrain")
@@ -54,7 +58,7 @@ class Terrain: WorldObject {
     
     
     
-    /// Creates a zSize*xSize grid of nodes under a singular node
+    /// Creates a zSize*xSize grid of nodes under a parent node. The grid nodes are stored in the terrainGrid
     /// - Parameters:
     ///   - zSize: The size of the grid in the Z-Direction
     ///   - xSize: The sie of the grind in the X-Direnction
@@ -63,14 +67,18 @@ class Terrain: WorldObject {
         let y = 0
         
         for z in 0...(zSize-1) {
+            //grid.append([SCNNode]())
             for x in 0...(xSize-1) {
                 let terrainNode = SCNNode()
                 terrainNode.name = "Terrain_Node.\(nodeCount)"
                 terrainNode.position = nextNodePosition(x: x, y: y, z: z)
                 parentNode.addChildNode(terrainNode)
+                grid[z][x] = terrainNode
                 nodeCount += 1
             }
         }
+        
+        
     }
     
     
@@ -136,14 +144,7 @@ class Terrain: WorldObject {
 //    }
     
     
-    ///  Generates a randomize spawn point from a list of vertices
-    /// - Parameter node: The terrain node
-    private func validSpawnCoordinate(vertices: [SCNVector3]) -> SCNVector3{
-        var spawnCoordinate:SCNVector3 = SCNVector3()
-        let randIndex = Int.random(in: 0...vertices.count)
-        spawnCoordinate = vertices[randIndex]
-        return spawnCoordinate
-    }
+   
     
     
    

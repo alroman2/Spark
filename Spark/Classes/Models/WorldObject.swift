@@ -9,11 +9,10 @@ import Foundation
 import SceneKit
 
 class WorldObject {
-    var refNode:SCNReferenceNode!
     
-    init(){
-        
-    }
+    var refNode:SCNReferenceNode!
+    var vertices: [SCNVector3]!
+    
     
     // --MARK: Public Methods
     
@@ -32,25 +31,19 @@ class WorldObject {
             refNode = SCNReferenceNode(url: url)
             refNode.name = "\(fileName)_Ref_Node"
             refNode?.load()
+            
+            //cache geometry vertices upon successful load
+            cacheVertices()
         } else {
             //throw error
             throw WorldDataError.invalidModel
         }
     }
     
-    /// Calculates a translation vector by calculating the minimum distance between two coordinate points
-    /// - Parameters:
-    ///   - startingVector: The initial positon
-    ///   - EndVector: The final or target position
-    /// - Returns: The distance between the two
-     func coordinateTranslation(startingVector: SCNVector3, EndVector: SCNVector3) -> SCNVector3{
-        var translationVector: SCNVector3 = SCNVector3()
-        
-        translationVector.x = EndVector.x - startingVector.x
-        translationVector.y = EndVector.y - startingVector.y
-        translationVector.z = EndVector.z - startingVector.z
-        
-        return translationVector
+   
+    /// Temporarily stores the vertices of the world object model. The method should be called intermittenly  when the model changes.
+    func cacheVertices(){
+        vertices = refNode.geometry?.vertices()
     }
     
     
