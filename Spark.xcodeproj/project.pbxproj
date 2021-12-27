@@ -53,6 +53,10 @@
 		A1710608271FB8B00028B5BB /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */; };
 		A171060A272126C70028B5BB /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1710609272126C60028B5BB /* Terrain.swift */; };
 		A171060C27213E700028B5BB /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A171060B27213E700028B5BB /* TestingViewController.swift */; };
+		A19BE12F273E311600CE11E3 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BE12E273E311600CE11E3 /* Tree.swift */; };
+		A19BE131273E3FB400CE11E3 /* WorldDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BE130273E3FB400CE11E3 /* WorldDataError.swift */; };
+		A19BE133273E44E400CE11E3 /* WorldObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BE132273E44E400CE11E3 /* WorldObject.swift */; };
+		A19BE135273E48DD00CE11E3 /* SCNGeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BE134273E48DD00CE11E3 /* SCNGeometryExtensions.swift */; };
 		A1E7E6D1272CAD0700802398 /* WorldState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E7E6D0272CAD0700802398 /* WorldState.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +128,10 @@
 		A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A1710609272126C60028B5BB /* Terrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
 		A171060B27213E700028B5BB /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		A19BE12E273E311600CE11E3 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		A19BE130273E3FB400CE11E3 /* WorldDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDataError.swift; sourceTree = "<group>"; };
+		A19BE132273E44E400CE11E3 /* WorldObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldObject.swift; sourceTree = "<group>"; };
+		A19BE134273E48DD00CE11E3 /* SCNGeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNGeometryExtensions.swift; sourceTree = "<group>"; };
 		A1E7E6D0272CAD0700802398 /* WorldState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,11 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				A17105D8271E8DFF0028B5BB /* Views */,
+				A19BE12D273E2D2400CE11E3 /* Models */,
 				A1591BA42717F7670082F238 /* Extensions */,
 				A14E7F382713B492005519A2 /* SparkStyle.swift */,
 				A14E7F3E2717C7BD005519A2 /* HapticsManager.swift */,
-				A1710609272126C60028B5BB /* Terrain.swift */,
-				A1E7E6D0272CAD0700802398 /* WorldState.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 				A1591BA72717F90D0082F238 /* UIButtonExtensions.swift */,
 				A1591BA92717FA200082F238 /* UIViewExtensions.swift */,
 				A1710607271FB8B00028B5BB /* UIViewControllerExtensions.swift */,
+				A19BE134273E48DD00CE11E3 /* SCNGeometryExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,6 +287,18 @@
 				A17105DB271E9A820028B5BB /* TabBarController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A19BE12D273E2D2400CE11E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A19BE12E273E311600CE11E3 /* Tree.swift */,
+				A19BE130273E3FB400CE11E3 /* WorldDataError.swift */,
+				A19BE132273E44E400CE11E3 /* WorldObject.swift */,
+				A1710609272126C60028B5BB /* Terrain.swift */,
+				A1E7E6D0272CAD0700802398 /* WorldState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,10 +453,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19BE12F273E311600CE11E3 /* Tree.swift in Sources */,
 				A1591BB027182AF00082F238 /* GameViewController.swift in Sources */,
 				A1710608271FB8B00028B5BB /* UIViewControllerExtensions.swift in Sources */,
 				A1E7E6D1272CAD0700802398 /* WorldState.swift in Sources */,
 				A1591BAC2718080D0082F238 /* PasswordCreatorViewController.swift in Sources */,
+				A19BE133273E44E400CE11E3 /* WorldObject.swift in Sources */,
+				A19BE135273E48DD00CE11E3 /* SCNGeometryExtensions.swift in Sources */,
 				A1591BAA2717FA200082F238 /* UIViewExtensions.swift in Sources */,
 				A17105DC271E9A820028B5BB /* TabBarController.swift in Sources */,
 				A1710606271F86AF0028B5BB /* SingleSignOnViewController.swift in Sources */,
@@ -451,6 +474,7 @@
 				A171060A272126C70028B5BB /* Terrain.swift in Sources */,
 				A13690212712F818006F48C8 /* SceneDelegate.swift in Sources */,
 				A1591BA32717E58F0082F238 /* UsernameViewController.swift in Sources */,
+				A19BE131273E3FB400CE11E3 /* WorldDataError.swift in Sources */,
 				A1591BA62717F7930082F238 /* UITextFieldExtensions.swift in Sources */,
 				A14E7F3B2713D7EB005519A2 /* EmailSignupViewController.swift in Sources */,
 			);

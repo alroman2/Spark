@@ -11,7 +11,10 @@ import SceneKit
 class TestingViewController: UIViewController {
 
     @IBOutlet weak var sceneView: SCNView!
+    @IBOutlet weak var SpawnTreeButton: UIButton!
+    
     var scene: SCNScene!
+    var world: WorldState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +37,13 @@ class TestingViewController: UIViewController {
     func setupScene(){
         //setup camera
         
-        var terrain = Terrain(width: 3, length: 3, height: 0)
+        world = WorldState();
+        //var terrain = Terrain(width: 3, length: 3, height: 0)
        
         //sceneView.allowsCameraControl = true
         scene = SCNScene()
         //let tarrainReference = SCNReferenceNode(coder: terrain.terrainScene?.rootNode as! SCNNode)
-        scene.rootNode.addChildNode((terrain.terrainScene?.rootNode.childNode(withName: "Terrain Parent Node", recursively: true))!)
+        scene.rootNode.addChildNode(world.terrains[0].parentNode)
         sceneView.scene = scene
         sceneView.showsStatistics = true
         //sceneView.debugOptions = [.showWireframe,.showBoundingBoxes]
@@ -64,5 +68,9 @@ class TestingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func onSpawnTreeButtone(_ sender: Any) {
+        let tree = Tree(fileName: "tree", fileType: "scn",dir: "/Art.scnassets/Vegetation")
+        world.spawnCopy(tree, on: world.terrains[0]);
+    }
+    
 }
