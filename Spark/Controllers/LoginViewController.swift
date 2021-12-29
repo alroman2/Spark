@@ -26,30 +26,12 @@ class LoginViewController: UIViewController {
     }
     
     private func styleButtons(){
-        
-//        SparkStyle.setButtonPill(button: createAccountButton)
-//        SparkStyle.setButtonPill(button: signInButton)
-        
-        //createAccountButton.layer.cornerRadius = 25.0
         createAccountButton.roundFrame()
         createAccountButton.whiteButton()
-        
-        
-        //signInButton.layer.cornerRadius = cornerRadius
         signInButton.roundFrame()
         signInButton.clearButton(borderColor: UIColor.white, textColor: UIColor.white)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

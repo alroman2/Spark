@@ -24,10 +24,7 @@ extension SCNGeometry {
         let offset = source.dataOffset / source.bytesPerComponent
         
         let vectorCount = source.vectorCount
-        
-        print("stride: \(stride)")
-        print("offset: \(offset)")
-        print("vectorCount: \(vectorCount)")
+
         return source.data.withUnsafeBytes { (buffer: UnsafePointer<Float>) -> [SCNVector3] in
             var result = Array<SCNVector3>()
             

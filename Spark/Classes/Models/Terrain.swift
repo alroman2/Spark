@@ -8,9 +8,6 @@
 import Foundation
 import SceneKit
 
-
-
-
 ///The terrain class models terrain data and functions
 ///Accessing or Modify Terrain Properties Should be done before attatching a reference to another scene
 class Terrain: WorldObject {
@@ -23,9 +20,6 @@ class Terrain: WorldObject {
     var grid: [[SCNNode]]!
     var parentNode:SCNNode!
      
-    
-    
-    
     /**
      Intialize a terrain with properties, the proporties will determine the grid size of the generated world. The grid size is dependent on spacing
      between nodes in the scene and the models attached to the nodes.
@@ -48,9 +42,6 @@ class Terrain: WorldObject {
         try? loadModel(fileName: "Terrain_Suraface_Flat", fileType: "scn", dir: "/Art.scnassets/Terrain")
         createNodeGrid(zSize: width, xSize: length)
         loadGridModels()
-        //try? generateTree(fileName: "tree", fileType: "scn", directory: "/Art.scnassets/Vegetation")
-        
-        
     }
     
     
@@ -77,8 +68,6 @@ class Terrain: WorldObject {
                 nodeCount += 1
             }
         }
-        
-        
     }
     
     
@@ -105,51 +94,6 @@ class Terrain: WorldObject {
         return SCNVector3(x: Float(x), y: Float(y), z: Float(z))
     }
     
-    
-    // --MARK: Model Generation
-   
-    
-    
-    /// Spawns a tree model in a random coordinate of a terrain node
-    /// - Parameters:
-    ///   - fileName: The relative path of the model
-    ///   - nodeName: The node name of the desired terrain node
-//    func generateTree(fileName: String, fileType: String, directory: String) throws {
-//        //Art.scnassets/Vegetation/tree.scn
-//        let nodeName = "Terrain_Node."
-//        var modelCopy: SCNNode?
-//
-//        if let filePath = Bundle.main.path(forResource: fileName, ofType: fileType, inDirectory: directory) {
-//            let referenceURL = URL(fileURLWithPath: filePath)
-//
-//            let referenceNode = SCNReferenceNode(url: referenceURL)
-//            referenceNode!.load()
-//
-//            terrainScene?.rootNode.enumerateChildNodes({ node, stop in
-//                if let name = node.name, name.contains(nodeName){
-//                    modelCopy = referenceNode!.clone()
-//                    node.addChildNode(modelCopy!)
-//
-//                    let vertices = node.childNodes[0].childNodes[0].geometry?.vertices()
-//
-//                    let spawnPoint = validSpawnCoordinate(vertices: vertices!)
-//
-//                    modelCopy?.localTranslate(by: coordinateTranslation(startingVector: modelCopy!.position, EndVector: spawnPoint))
-//                }
-//            })
-//        } else {
-//            throw WorldDataError.invalidModel
-//        }
-//
-//    }
-    
-    
-   
-    
-    
-   
-    
-    
     // MARK: Debugging Options
     
     /// Creates a visible geometry that can attatch to scene nodes to allow for visible debugging
@@ -161,19 +105,7 @@ class Terrain: WorldObject {
         shape.materials = [material]
         return shape
     }
-    
-    
-//
-//    /// Allows specified nodes to be visible in the Scene
-//    /// - Parameter nodeName: The name of a SCNNode
-//    public func enableVisibleNodes(nodeName:String){
-//        terrainScene?.rootNode.enumerateChildNodes({ node, stop in
-//            if let name = node.name, name.contains(nodeName){
-//                node.geometry = nodeDebugGeometry()
-//            }
-//        })
-//    }
-    //end class
+
 }
 
 

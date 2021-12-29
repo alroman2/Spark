@@ -10,7 +10,6 @@ import UIKit
 
 extension UIButton {
     func roundFrame(){
-//        self.titleLabel?.font = UIFont(name: "CrosstenSoft Bold", size: 50)
         self.layer.cornerRadius = self.frame.height/2
     }
     

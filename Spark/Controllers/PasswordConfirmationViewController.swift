@@ -46,16 +46,4 @@ class PasswordConfirmationViewController: UIViewController {
         //if account save is successful perform segue
         self.performSegue(withIdentifier: "GameSceneSegue", sender: self)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
