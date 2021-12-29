@@ -8,13 +8,6 @@
 import Foundation
 import SceneKit
 
-// how to add terrain to scene
-//terrainScene?.rootNode.enumerateChildNodes({ node, stop in
-//    if let name = node.name, name.contains(nodeName){
-//        modelCopy = referenceNode!.clone()
-//         node name referes to parent node of terrain
-//        node.addChildNode(modelCopy!)
-//    }
 class WorldState{
     var terrains = [Terrain]()
     
@@ -23,7 +16,6 @@ class WorldState{
     }
     
     func initializeTerrain(){
-//        let tree = Tree(fileName: "tree", fileType: "scn", dir: "/Art.scnassets/Vegetation")
         let terrain = Terrain(width: 1, length: 1, height: 1)
         terrains.append(terrain);
         
@@ -54,15 +46,6 @@ class WorldState{
         
         //translate the clone to the coordinates
         modelCopy?.localTranslate(by: coordinateTranslation(from: modelCopy!.position, to: (modelCopy?.convertPosition(spawnCoordinate, from: terrainSectorNode.childNodes[0].childNodes[0]))! ) )
-        
-        
-        
-//        if let spawnCoordinates = Int.random(in: 0...(terrain.grid[z][x].childNode(withName: "Terrain", recursively: true)?.geometry?.vertices()!.count)!) {
-//            //valid
-//        } else {
-//
-//        }
-//
     }
     
     
