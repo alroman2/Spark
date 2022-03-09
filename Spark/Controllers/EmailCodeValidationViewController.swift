@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class EmailCodeValidationViewController: UIViewController {
     @IBOutlet weak var codeTextField: UITextField!
@@ -13,6 +15,7 @@ class EmailCodeValidationViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
     var hapticManager: HapticsManager!
+    var user:User!
     
     
     override func viewDidLoad() {
@@ -23,8 +26,26 @@ class EmailCodeValidationViewController: UIViewController {
         codeTextField.becomeFirstResponder()
         continueButton.roundFrame()
         continueButton.gradientButton(primary: UIColor.systemOrange.cgColor, secondary: UIColor.systemPink.cgColor)
+        Auth.auth().currentUser?.sendEmailVerification(completion: { error in
+            if let error = error {
+                let alert = UIAlertController(title: "Unable to send Email", message: "There was an error sending the verification email", preferredStyle: .alert)
+                
+                let button = UIAlertAction(title: "Okay", style: .default, handler: nil)
+                
+                alert.addAction(button)
+                self.present(alert, animated: true, completion: nil)
+            }
+            
+            Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.checkEmailVerification), userInfo: nil, repeats: true)
+
+        })
+        
     }
-    
+    @objc func checkEmailVerification(){
+        if ((Auth.auth().currentUser?.isEmailVerified) != false){
+            self.performSegue(withIdentifier: "CodeToName", sender: self)
+        }
+    }
     
     @IBAction func onCodeChange(_ sender: Any) {
         invalidCodeLabel.isHidden = true
@@ -51,6 +72,10 @@ class EmailCodeValidationViewController: UIViewController {
         }
         
         performSegue(withIdentifier: "createUsernameSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
 }

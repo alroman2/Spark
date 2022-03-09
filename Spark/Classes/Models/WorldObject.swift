@@ -12,6 +12,7 @@ class WorldObject {
     
     var refNode:SCNReferenceNode!
     var vertices: [SCNVector3]!
+    var isOverlappable: Bool!
     
     
     // --MARK: Public Methods
@@ -23,9 +24,8 @@ class WorldObject {
     ///   - fileType: A compatible file type postfix
     ///   - dir: A directory path to the file from the project root
      func loadModel(fileName: String, fileType: String, dir: String) throws {
-        
         if let filePath = Bundle.main.path(forResource: fileName, ofType: fileType, inDirectory: dir) {
-            //attatch model to node
+            //attach model to node
             let url = URL(fileURLWithPath: filePath)
             
             refNode = SCNReferenceNode(url: url)
@@ -35,7 +35,6 @@ class WorldObject {
             //cache geometry vertices upon successful load
             cacheVertices()
         } else {
-            //throw error
             throw WorldDataError.invalidModel
         }
     }

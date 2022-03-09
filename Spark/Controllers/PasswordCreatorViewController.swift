@@ -13,9 +13,11 @@ class PasswordCreatorViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var invalidPasswordLabel: UILabel!
     @IBOutlet weak var continueButton: UIButton!
+    var user:User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         hapticManager = HapticsManager()
         passwordTextField.setBoxStyleBottomLine()
         passwordTextField.becomeFirstResponder()
@@ -37,6 +39,7 @@ class PasswordCreatorViewController: UIViewController {
             return
         }
         
+        user.password = passwordTextField.text!
         self.performSegue(withIdentifier: "ConfirmPasswordSegue", sender: self)
         
     }
@@ -59,7 +62,7 @@ class PasswordCreatorViewController: UIViewController {
     
         if (segue.identifier == "ConfirmPasswordSegue"){
             let viewController = segue.destination as? PasswordConfirmationViewController
-            
+            viewController?.user = self.user
             viewController?.newPassword = passwordTextField.text
         }
     }

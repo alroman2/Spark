@@ -14,6 +14,7 @@ class TestingViewController: UIViewController {
     @IBOutlet weak var SpawnTreeButton: UIButton!
     
     var scene: SCNScene!
+    var worldScene: WorldScene!
     var world: WorldState!
     
     override func viewDidLoad() {
@@ -36,32 +37,35 @@ class TestingViewController: UIViewController {
 
     func setupScene(){
         //setup camera
+        worldScene = WorldScene()
         
-        world = WorldState();
         //var terrain = Terrain(width: 3, length: 3, height: 0)
        
         //sceneView.allowsCameraControl = true
-        scene = SCNScene()
+        //scene = SCNScene()
         //let tarrainReference = SCNReferenceNode(coder: terrain.terrainScene?.rootNode as! SCNNode)
-        scene.rootNode.addChildNode(world.terrains[0].parentNode)
-        sceneView.scene = scene
-        sceneView.showsStatistics = true
+        
+        sceneView.scene = worldScene.root
+        sceneView.showsStatistics = false
         //sceneView.debugOptions = [.showWireframe,.showBoundingBoxes]
         //sceneView.debugOptions = [.showBoundingBoxes]
         sceneView.autoenablesDefaultLighting = true
         sceneView.allowsCameraControl = true
         //setupCamera()
+        sceneView.delegate = worldScene
+        sceneView.isPlaying = true
         
         //setup light environment
       
-        //generate trees
+        
+        
         
         
     }
 
     @IBAction func onSpawnTreeButtone(_ sender: Any) {
         let tree = Tree(fileName: "tree", fileType: "scn",dir: "/Art.scnassets/Vegetation")
-        world.spawnCopy(tree, on: world.terrains[0]);
+        world.randomlySpawnCopy(tree, on: world.terrains[0]);
     }
     
 }

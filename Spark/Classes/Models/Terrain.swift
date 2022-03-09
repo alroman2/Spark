@@ -19,7 +19,8 @@ class Terrain: WorldObject {
     
     var grid: [[SCNNode]]!
     var parentNode:SCNNode!
-     
+    
+
     /**
      Intialize a terrain with properties, the proporties will determine the grid size of the generated world. The grid size is dependent on spacing
      between nodes in the scene and the models attached to the nodes.
@@ -33,20 +34,30 @@ class Terrain: WorldObject {
         
         grid = [[SCNNode]](repeating: [SCNNode](repeating: SCNNode(), count: width), count: length)
         
+        
         parentNode = SCNNode()
         parentNode.name = "Terrain Parent Node"
         
       
         
         //loads model as ref node into Terrain
-        try? loadModel(fileName: "Terrain_Suraface_Flat", fileType: "scn", dir: "/Art.scnassets/Terrain")
+        try? loadModel(fileName: "untitled copy", fileType: "scn", dir: "/Art.scnassets/Terrain")
         createNodeGrid(zSize: width, xSize: length)
         loadGridModels()
     }
     
-    
+    func gridContains(x: Int, y: Int, z: Int) -> Bool {
+        if ( !(x >= 0 && x <= width) ) {
+            return false
+        } else if ( !(z >= 0 && z <= length)){
+            return false
+        } else if ( !(y >= 0 && y <= height)){
+            return false
+        }
+        
+        return true
+    }
     // --MARK: Node Generation
-    
     
     
     /// Creates a zSize*xSize grid of nodes under a parent node. The grid nodes are stored in the terrainGrid

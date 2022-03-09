@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class UsernameViewController: UIViewController {
 
@@ -32,7 +34,19 @@ class UsernameViewController: UIViewController {
             hapticManager?.playError()
             return
         }
-        self.performSegue(withIdentifier: "PasswordCreatorSegue", sender: self)
+        
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = usernameTextField.text
+        changeRequest?.commitChanges(completion: { error in
+            if let error = error {
+                let alert = UIAlertController(title: "Unable to save user name", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            }
+            
+            self.performSegue(withIdentifier: "NameToHome", sender: self)
+        })
+       
         
     }
     

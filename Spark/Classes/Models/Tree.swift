@@ -8,13 +8,8 @@
 import Foundation
 import SceneKit
 
-
-
 class Tree: WorldObject {
-   
-   
-    
-    
+
     /// Initialize a Tree object and it's respective model
     /// - Parameters:
     ///   - fileName: name of asset
@@ -22,8 +17,8 @@ class Tree: WorldObject {
     ///   - dir: directory path from project root
     init(fileName:String, fileType:String, dir:String){
         super.init()
-
         try? loadModel(fileName: fileName, fileType: fileType, dir: dir)
+        isOverlappable = false
     }
     
     

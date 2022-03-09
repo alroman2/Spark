@@ -7,6 +7,7 @@
 
 import UIKit
 import SpriteKit
+import Firebase
 
 class SingleSignOnViewController: UIViewController {
 
@@ -45,7 +46,14 @@ class SingleSignOnViewController: UIViewController {
     
     @IBAction func onLoginButton(_ sender: Any) {
         //TODO: Implement sign authentication
-        performSegue(withIdentifier: "SparkControllerSegue", sender: self)
+        Auth.auth().signIn(withEmail: emailTextField.text ?? "", password: passwordTextField.text ?? "") { res, error in
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+                self.performSegue(withIdentifier: "SparkControllerSegue", sender: self)
+            }
+        }
+        
     }
     
     

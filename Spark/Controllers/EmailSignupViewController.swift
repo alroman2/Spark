@@ -7,12 +7,17 @@
 
 import UIKit
 import CoreHaptics
+import Firebase
+
 
 class EmailSignupViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var inavlidEmailLabel: UILabel!
     @IBOutlet weak var sumbitEmailButton: UIButton!
+    
+    
+    var user: User!
 
     private var hapticManager: HapticsManager!
     
@@ -20,6 +25,7 @@ class EmailSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        user = User()
         hapticManager = HapticsManager()
         emailTextField.setBoxStyleBottomLine()
         emailTextField.becomeFirstResponder()
@@ -36,7 +42,8 @@ class EmailSignupViewController: UIViewController {
     @IBAction func onSubmitEmail(_ sender: Any) {
         if (isEmailValid(email: emailTextField.text ?? "")){
             //go to next segue
-            self.performSegue(withIdentifier: "verifyEmailSegue", sender: self)
+            user.email = emailTextField.text!
+            self.performSegue(withIdentifier: "EmailToPassword", sender: self)
             return
         }
         
@@ -44,6 +51,13 @@ class EmailSignupViewController: UIViewController {
         emailTextField.setStateError()
         hapticManager?.playError()
         
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PasswordCreatorViewController{
+            vc.user = self.user
+        }
         
     }
     
